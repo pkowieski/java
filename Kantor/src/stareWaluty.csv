@@ -1,5 +1,5 @@
-nazwaWaluty; skrót; kursKupna; kursSprzedaży
-Marka niemiecka; DEM; 2.10; 2.20
-Peseta hiszpańska; ESP; 50.25; 55.50
-Korona słowacka; SKK; 10.20; 11.50
-Szyling austriacki; ATS; 2.65; 2.75
+nazwaWaluty; skrót; kursKupna; kursSprzedaży; ilosc
+Marka niemiecka; DEM; 2.10; 2.20; 10000
+Peseta hiszpańska; ESP; 50.25; 55.50; 10000
+Korona słowacka; SKK; 10.20; 11.50; 10000
+Szyling austriacki; ATS; 2.65; 2.75; 10000

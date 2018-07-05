@@ -1,5 +1,5 @@
-nazwaWaluty; skrót; kursKupna; kursSprzedaży
-Dolar amerykanski; USD; 3.75; 3.86
-Euro; EUR; 4.25; 4.39
-Funt szterling; GBP; 4.74; 4.85
-Frank szwajcarski; CHF; 3.63; 3.75
+nazwaWaluty; skrót; kursKupna; kursSprzedaży; ilosc
+Dolar amerykanski; USD; 3.75; 3.86; 100000
+Euro; EUR; 4.25; 4.39; 100000
+Funt szterling; GBP; 4.74; 4.85; 100000
+Frank szwajcarski; CHF; 3.63; 3.75; 100000

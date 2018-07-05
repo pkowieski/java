@@ -1,8 +1,8 @@
 
 public class AktualneWaluty extends Waluta {
 
-    public AktualneWaluty(String nazwaWaluty, String symbolWaluty, Double kursKupna, Double kursSprzedazy) {
-        super(nazwaWaluty, symbolWaluty, kursKupna, kursSprzedazy);
+    public AktualneWaluty(String nazwaWaluty, String symbolWaluty, Double kursKupna, Double kursSprzedazy, Double iloscWkantorze) {
+        super(nazwaWaluty, symbolWaluty, kursKupna, kursSprzedazy, iloscWkantorze);
         {
             System.out.println("Wywołano konstruktor aktualnych walut. Liczba obiektów: " + zwrocLiczbeObiektow());
         }

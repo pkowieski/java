@@ -47,7 +47,8 @@ public class Main {
                         slowo[0].trim(),
                         slowo[1].trim(),
                         Double.parseDouble(slowo[2].trim()),
-                        Double.parseDouble(slowo[3].trim())
+                        Double.parseDouble(slowo[3].trim()),
+                        Double.parseDouble(slowo[4].trim())
                 );
                 kantor.dodajWalute(waluta, czytanaLinia);
                 czytanaLinia++;
@@ -73,7 +74,7 @@ public class Main {
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
         Interfejs.menuGlowneKomunikaty();
-        int wynik = wczytajLiczbe(0, 5);
+        int wynik = wczytajLiczbe(0, 6);
         switch (wynik) {
             case 0:
                 wyjdz(kantor);
@@ -95,6 +96,9 @@ public class Main {
             case 5:
                 wczytanieStarychWalut();
                 menuGlowne(kantor, tranzakcje);
+            case 6:
+                tranzakcje.zestawienieIlosci(kantor);
+                menuGlowne(kantor, tranzakcje);
             default:
                 wyjdz(kantor);
                 break;
@@ -105,7 +109,7 @@ public class Main {
 
         Interfejs.kupWalutyKomunikaty();
         Scanner scan = new Scanner(System.in);
-        int iloscKupionejWaluty;
+        double iloscKupionejWaluty;
         int wynik = wczytajLiczbe(0, 4);
         switch (wynik) {
             case 0:
@@ -145,7 +149,7 @@ public class Main {
 
         Interfejs.sprzedajWalutyKomunikaty();
         Scanner scan = new Scanner(System.in);
-        int iloscSprzedanejWaluty;
+        double iloscSprzedanejWaluty;
         int wynik = wczytajLiczbe(0, 4);
         switch (wynik) {
             case 0:
@@ -230,7 +234,8 @@ public class Main {
                         slowo[0].trim(),
                         slowo[1].trim(),
                         Double.parseDouble(slowo[2].trim()),
-                        Double.parseDouble(slowo[3].trim())
+                        Double.parseDouble(slowo[3].trim()),
+                        Double.parseDouble(slowo[4].trim())
                 );
                 kantor.dodajWalute(waluta, czytanaLinia);
                 czytanaLinia++;

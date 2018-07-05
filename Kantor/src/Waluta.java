@@ -5,14 +5,16 @@ public abstract class Waluta {
     public String symbolWaluty;
     public Double kursKupna;
     public Double kursSprzedazy;
+    public Double iloscWkantorze;
     private static int liczbaObiektow = 0;
 
-    protected Waluta(String nazwaWaluty, String symbolWaluty, double kursKupna, double kursSprzedazy) {
+    protected Waluta(String nazwaWaluty, String symbolWaluty, double kursKupna, double kursSprzedazy, double iloscWkantorze) {
 
         this.nazwaWaluty = nazwaWaluty;
         this.symbolWaluty = symbolWaluty;
         this.kursKupna = kursKupna;
         this.kursSprzedazy = kursSprzedazy;
+        this.iloscWkantorze = iloscWkantorze;
         liczbaObiektow++;
         System.out.println("Konstruktor klasy Waluta");
     }
@@ -23,6 +25,7 @@ public abstract class Waluta {
         this.symbolWaluty = waluta.symbolWaluty;
         this.kursKupna = waluta.kursKupna;
         this.kursSprzedazy = waluta.kursSprzedazy;
+        this.iloscWkantorze = waluta.iloscWkantorze;
         System.out.println("Konstruktor kopiujący");
     }
 

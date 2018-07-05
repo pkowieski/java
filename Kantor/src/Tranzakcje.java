@@ -21,6 +21,14 @@ public class Tranzakcje {
         System.out.println("Przychody CHF = " + kantor.przychodCHF);
     }
 
+    public void zestawienieIlosci(Kantor kantor) {
+        System.out.println("Ilość PLN = " + kantor.przychodPLN);
+        System.out.println("Ilość USD = " + kantor.spisWalut[0].iloscWkantorze);
+        System.out.println("Ilość EUR = " + kantor.spisWalut[1].iloscWkantorze);
+        System.out.println("Ilość GBP = " + kantor.spisWalut[2].iloscWkantorze);
+        System.out.println("Ilość CHF = " + kantor.spisWalut[3].iloscWkantorze);
+    }
+
     public static void zapiszTranzakcje(Kantor kantor) throws IOException {
         String sciezka = "tranzakcje.txt";
         FileWriter fileWriter = null;

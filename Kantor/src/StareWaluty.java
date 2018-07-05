@@ -1,8 +1,8 @@
 
 public class StareWaluty extends Waluta {
 
-    public StareWaluty(String nazwaWaluty, String symbolWaluty, Double kursKupna, Double kursSprzedazy) {
-        super(nazwaWaluty, symbolWaluty, kursKupna, kursSprzedazy);
+    public StareWaluty(String nazwaWaluty, String symbolWaluty, Double kursKupna, Double kursSprzedazy, Double iloscWkantorze) {
+        super(nazwaWaluty, symbolWaluty, kursKupna, kursSprzedazy, iloscWkantorze);
         {
             System.out.println("Wywołano konstruktor starych walut.");
         }

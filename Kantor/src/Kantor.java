@@ -3,7 +3,7 @@ import java.util.Objects;
 
 public class Kantor {
 
-    private Waluta[] spisWalut;
+    public Waluta[] spisWalut;
 
     double przychodPLN;
     double przychodUSD;
@@ -40,34 +40,46 @@ public class Kantor {
     }
 
     public void kupUSD(double ilosc) {
-        przychodPLN += spisWalut[0].kursKupna * ilosc;
+        if (ilosc < spisWalut[0].iloscWkantorze)
+            przychodPLN += spisWalut[0].kursKupna * ilosc;
+        else System.out.println("Nie mamy takiej ilosci w kantorze!");
     }
 
     public void kupEUR(double ilosc) {
-        przychodPLN += spisWalut[1].kursKupna * ilosc;
+        if (ilosc < spisWalut[1].iloscWkantorze)
+            przychodPLN += spisWalut[1].kursKupna * ilosc;
+        else System.out.println("Nie mamy takiej ilosci w kantorze!");
     }
 
     public void kupGBP(double ilosc) {
+        if (ilosc < spisWalut[2].iloscWkantorze)
         przychodPLN += spisWalut[2].kursKupna * ilosc;
+        else System.out.println("Nie mamy takiej ilosci w kantorze!");
     }
 
     public void kupCHF(double ilosc) {
-        przychodPLN += spisWalut[3].kursKupna * ilosc;
+        if (ilosc < spisWalut[3].iloscWkantorze)
+            przychodPLN += spisWalut[3].kursKupna * ilosc;
+        else System.out.println("Nie mamy takiej ilosci w kantorze!");
     }
 
     public void sprzedajUSD(double ilosc) {
         przychodUSD += ilosc;
+        spisWalut[0].iloscWkantorze += spisWalut[0].iloscWkantorze;
     }
 
     public void sprzedajEUR(double ilosc) {
         przychodEUR += ilosc;
+        spisWalut[1].iloscWkantorze += spisWalut[1].iloscWkantorze;
     }
 
     public void sprzedajGBP(double ilosc) {
         przychodGBP += ilosc;
+        spisWalut[2].iloscWkantorze += spisWalut[2].iloscWkantorze;
     }
 
     public void sprzedajCHF(double ilosc) {
         przychodCHF += ilosc;
+        spisWalut[3].iloscWkantorze += spisWalut[3].iloscWkantorze;
     }
 }

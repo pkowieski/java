@@ -11,6 +11,7 @@ public class Interfejs {
         System.out.println("0. Koniec i zapis sesji");
         System.out.println("\n4. Pokaż podsumowanie dnia");
         System.out.println("5. Pokaż kursy nieaktualnych walut");
+        System.out.println("6. Pokaż ilosci walut jakie znajdują się w kantorze");
         System.out.println("*******************************************");
     }
 
