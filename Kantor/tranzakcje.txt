@@ -1,0 +1,6 @@
+Ilość tranzakcji: 0
+Dzienny przychod PLN = 0.0
+Dzienny przychod USD = 0.0
+Dzienny przychod EUR = 0.0
+Dzienny przychod GBP = 0.0
+Dzienny przychod CHF = 0.0
